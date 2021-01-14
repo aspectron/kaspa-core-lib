@@ -1,6 +1,7 @@
 declare module 'kaspacore-lib' {
 
 	function initRuntime(): Promise;
+	function setDebugLevel(level:number):void;
 
 	export namespace encoding {
 		export class BufferReader {

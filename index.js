@@ -97,6 +97,9 @@ kaspacore.util.js = require('./lib/util/js');
 kaspacore.util.preconditions = require('./lib/util/preconditions');
 kaspacore.util.base32 = require('./lib/util/base32');
 kaspacore.util.convertBits = require('./lib/util/convertBits');
+kaspacore.setDebugLevel = (level)=>{
+	kaspacore.util.js.debugLevel = level;
+}
 
 // errors thrown by the library
 kaspacore.errors = require('./lib/errors');
