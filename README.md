@@ -1,30 +1,24 @@
-# Kaspacore Lib Cash
+# Kaspacore Lib
 
-[![NPM Package](https://img.shields.io/npm/v/kaspacore-lib.svg?style=flat-square)](https://www.npmjs.org/package/kaspacore-lib)
-[![Build Status](https://img.shields.io/travis/bitpay/kaspacore-lib.svg?branch=master&style=flat-square)](https://travis-ci.org/bitpay/kaspacore-lib)
-[![Coverage Status](https://coveralls.io/repos/github/bitpay/kaspacore-lib/badge.svg)](https://coveralls.io/github/bitpay/kaspacore-lib)
+**JavaScript Kaspa library.**
 
-**A pure and powerful JavaScript Bitcoin *Cash* library.**
+*IMPORTANT: THIS LIBRARY IS WORK IN PROGRESS, THIS IS NOT PRODUCTION READY*
 
-## Principles
+## Based on Bitcore by BitPay
 
-Bitcoin Cash is another powerful peer-to-peer platform for the next generation of financial technology. The decentralized nature of the Bitcoin network allows for highly resilient bitcoin infrastructure, and the developer community needs reliable, open-source tools to implement bitcoin apps and services.
-
-## Bitcoin Cash changes
-
-Bitcoin cash uses a different `sighash` for transaction signatures. The implementation in bitcore-cash has been tested against the original bitcoin-cash test vectors (see sighash.json in `/test`). `bitcoin-cash` modifications in script evaluation have not been implemented yet.
+Based on the popular Bitcore library developed by BitPay, Kaspacore library provides primitives for interfacing with Kaspa network.
 
 ## Get Started
 
 ```sh
-npm install kaspacore-lib
+git clone git@github.com:aspectron/kaspacore-lib
 ```
 
-Adding Kaspacore Cash to your app's `package.json`:
+Adding Kaspacore to your app's `package.json`:
 
 ```json
 "dependencies": {
-    "kaspacore-lib": "=0.18.0",
+    "aspectron/kaspacore-lib": "*",
     ...
 }
 ```
@@ -47,7 +41,7 @@ The complete docs are hosted here: [bitcore documentation](https://github.com/bi
 
 ## Building the Browser Bundle
 
-To build a bitcore-lib full bundle for the browser:
+To build a kaspacore-lib full bundle for the browser:
 
 ```sh
 gulp browser
@@ -55,7 +49,7 @@ gulp browser
 
 This will generate files named `kaspacore-lib.js` and `kaspacore-lib.min.js`.
 
-You can also use our pre-generated files, provided for each release along with a PGP signature by one of the project's maintainers. To get them, checkout the [releases](https://github.com/bitpay/bitcore/blob/master/packages/kaspacore-lib/CHANGELOG.md).
+You can also use our pre-generated files, provided for each release along with a PGP signature by one of the project's maintainers. To get them, checkout the [releases](https://github.com/bitpay/bitcore/blob/master/packages/bitcore-lib/CHANGELOG.md).
 
 ## Development & Tests
 
@@ -88,4 +82,5 @@ See [CONTRIBUTING.md](https://github.com/bitpay/bitcore/blob/master/Contributing
 
 Code released under [the MIT license](https://github.com/bitpay/bitcore/blob/master/LICENSE).
 
-Copyright 2013-2019 BitPay, Inc. Kaspacore is a trademark maintained by BitPay, Inc.
+Bitcore - Copyright 2013-2019 BitPay, Inc. Bitcore is a trademark maintained by BitPay, Inc.
+Kaspacore - Copyright 2020 ASPECTRON Inc.
