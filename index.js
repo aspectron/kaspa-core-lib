@@ -54,7 +54,7 @@ secp256k1.onRuntimeInitialized = () => {
 secp256k1.onAbort = (error) => {
 	console.log("secp256k1:onAbort:", error)
 }
-const defered = ()=>{
+const deferred = ()=>{
 	let methods = {};
 	let promise = new Promise((resolve, reject)=>{
 		methods = {resolve, reject};
@@ -62,7 +62,7 @@ const defered = ()=>{
 	Object.assign(promise, methods);
 	return promise;
 }
-const readySignal = defered();
+const readySignal = deferred();
 
 kaspacore.ready = ()=>{
 	readySignal.resolve(true);
