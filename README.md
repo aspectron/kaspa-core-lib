@@ -1,5 +1,5 @@
-JavaScript Kaspa library
-========================
+JavaScript Data Primitives Library for Kaspa
+=============================================
 
 **PLEASE NOTE: This project is under heavy development and is not production ready**
 
@@ -23,7 +23,7 @@ Adding Kaspacore to your app's `package.json`:
 Kaspa adaptation
 ----------------
 
-Kaspacore library provides primitives such as Transaction and UTXO data structures customized for use with the next-generation high-performance Kaspa network.  
+Kaspacore library provides primitives such as Transaction and UTXO data structures customized for use with the next-generation high-performance Kaspa network.
 
 Documentation
 -------------
