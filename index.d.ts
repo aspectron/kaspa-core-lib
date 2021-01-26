@@ -85,6 +85,8 @@ declare module 'kaspacore-lib' {
 		constructor(script ? : Script);
 		static buildPublicKeyHashIn(publicKey: PublicKey, signature: Signature, sigtype): Script;
 		static empty(): Script;
+		inspect():string;
+		toBuffer():Buffer;
 	}
 
 	export namespace Transaction {
@@ -147,7 +149,7 @@ declare module 'kaspacore-lib' {
 		fee(amount: number): this;
 		setVersion(version: number): this;
 		feePerKb(amount: number): this;
-		sign(privateKey: PrivateKey | string): this;
+		sign(privateKey: PrivateKey|PrivateKey[] | string|string[], sigtype:number, signingMethod:string|undefined): this;
 		applySignature(sig: crypto.Signature): this;
 		addInput(input: Transaction.Input): this;
 		addOutput(output: Transaction.Output): this;
