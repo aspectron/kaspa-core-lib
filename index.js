@@ -6,6 +6,8 @@ const blake2b = require('blake2b-wasm');
 
 var kaspacore = module.exports;
 
+kaspacore.secp256k1 = secp256k1;
+
 // module information
 kaspacore.version = 'v' + require('./package.json').version;
 kaspacore.versionGuard = function(version) {
