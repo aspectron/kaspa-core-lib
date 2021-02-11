@@ -1,5 +1,5 @@
 {
-  "name": "kaspacore-lib",
+  "name": "@kaspa/core-lib",
   "version": "0.0.1",
   "main": "index.js",
   "authors": [
@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "blake2b-wasm": "^2.1.0",
-    "secp256k1-wasm": "aspectron/secp256k1-wasm",
+    "secp256k1-wasm": "*",
     "bitcore-lib": "^8.23.1",
     "bn.js": "=4.11.8",
     "bs58": "^4.0.1",
