@@ -1,6 +1,6 @@
 {
   "name": "@kaspa/core-lib",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "main": "index.js",
   "authors": [
     {
@@ -35,22 +35,7 @@
     "gulp": "^4.0.0",
     "sinon": "^7.1.1"
   },
-  "gitHead": "012cc0216a9bc6b195035855bd17149bad41acd1",
   "keywords": [
-    "bitcoin",
-    "transaction",
-    "address",
-    "p2p",
-    "ecies",
-    "cryptocurrency",
-    "blockchain",
-    "payment",
-    "bip21",
-    "bip32",
-    "bip37",
-    "bip69",
-    "bip70",
-    "multisig"
   ],
   "license": "MIT",
   "repository": {
@@ -58,10 +43,17 @@
     "url": "https://github.com/aspectron/kaspacore-lib"
   },
   "scripts": {
-    "build": "gulp",
-    "coverage": "gulp coverage",
-    "pub": "npm run build && npm publish",
-    "test": "gulp test",
-    "test:ci": "npm run test"
-  }
+    "xbuild": "gulp",
+    "xcoverage": "gulp coverage",
+    "xpub": "npm run build && npm publish",
+    "xtest": "gulp test",
+    "xtest:ci": "npm run test"
+  },
+  "files":[
+    "lib",
+    "index.d.ts",
+    "index.js",
+    "LICENSE",
+    "README.md"
+  ]
 }

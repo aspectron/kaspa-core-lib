@@ -1,4 +1,4 @@
-declare module 'kaspacore-lib' {
+declare module '@kaspa/core-lib' {
 
 	function initRuntime(): Promise;
 	function setDebugLevel(level:number):void;
