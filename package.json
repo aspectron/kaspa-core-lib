@@ -36,8 +36,7 @@
     "gulp": "^4.0.0",
     "sinon": "^7.1.1"
   },
-  "keywords": [
-  ],
+  "keywords": [],
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -50,7 +49,7 @@
     "xtest": "gulp test",
     "xtest:ci": "npm run test"
   },
-  "files":[
+  "files": [
     "lib",
     "index.d.ts",
     "index.js",
