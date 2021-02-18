@@ -173,7 +173,7 @@ declare module '@kaspa/core-lib' {
 		version: number;
 		nLockTime: number;
 		fromBufferReader(reader: BufferReader): Transaction;
-		toBuffer(): Buffer;
+		toBuffer(skipInputs?:boolean): Buffer;
 		static shallowCopy(tx: Transaction): Transaction;
 	}
 
