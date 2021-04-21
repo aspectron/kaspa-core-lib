@@ -161,6 +161,7 @@ declare module '@kaspa/core-lib' {
 		getFee(): number;
 		getChangeOutput(): Transaction.Output | null;
 		getLockTime(): Date | number;
+		getMass(): number;
 
 		verify(): string | boolean;
 		isCoinbase(): boolean;
