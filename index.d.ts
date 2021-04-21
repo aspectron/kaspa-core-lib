@@ -87,9 +87,11 @@ declare module '@kaspa/core-lib' {
 		static empty(): Script;
 		inspect():string;
 		toBuffer():Buffer;
+		getSignatureOperationsCount():number
 	}
 
 	export namespace Transaction {
+		
 		static class sighash {
 			static sign(transaction, privateKey, sighashType, inputIndex, subscript, satoshisBN, flags, signingMethod);
 			static sighash(transaction, sighashType, inputNumber, subscript, satoshisBN, flags): Buffer;
@@ -135,6 +137,9 @@ declare module '@kaspa/core-lib' {
 	}
 
 	export class Transaction {
+		static MassPerSigOp:number;
+		static EstimatedStandaloneMassWithoutInputs:number;
+		static MassPerTxByte:number;
 		inputs: Transaction.Input[];
 		outputs: Transaction.Output[];
 		readonly id: string;
