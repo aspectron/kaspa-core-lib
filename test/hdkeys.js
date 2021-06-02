@@ -305,7 +305,7 @@ describe('BIP32 compliance', function() {
       kaspacore.PrivateKey.isValid.callCount.should.equal(2);
     });
     it('will handle edge case that a derive public key is invalid', function() {
-      var publicKeyBuffer = Buffer.from('029e58b241790284ef56502667b15157b3fc58c567f044ddc35653860f9455d099', 'hex');
+      var hashBuffer = Buffer.from('029e58b241790284ef56502667b15157b3fc58c567f044ddc35653860f9455d099', 'hex');
       var chainCodeBuffer = Buffer.from('39816057bba9d952fe87fe998b7fd4d690a1bb58c2ff69141469e4d1dffb4b91', 'hex');
       var key = new HDPublicKey({
         network: 'testnet',
@@ -313,7 +313,7 @@ describe('BIP32 compliance', function() {
         parentFingerPrint: 0,
         childIndex: 0,
         chainCode: chainCodeBuffer,
-        publicKey: publicKeyBuffer
+        publicKey: hashBuffer
       });
       var unstubbed = kaspacore.PublicKey.fromPoint;
       kaspacore.PublicKey.fromPoint = function() {
