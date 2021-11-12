@@ -162,6 +162,8 @@ declare module '@kaspa/core-lib' {
 		lockUntilDate(time: Date | number): this;
 		lockUntilBlockHeight(height: number): this;
 
+		getMassAndSize():{txSize:number, mass:number};
+
 		hasWitnesses(): boolean;
 		getFee(): number;
 		getChangeOutput(): Transaction.Output | null;
