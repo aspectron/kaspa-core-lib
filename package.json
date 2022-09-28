@@ -18,7 +18,6 @@
   "dependencies": {
     "blake2b-wasm": "^2.1.0",
     "secp256k1-wasm": ">=2.0.0",
-    "bitcore-lib": "^8.23.1",
     "bn.js": "=4.11.8",
     "bs58": "^4.0.1",
     "buffer-compare": "=1.1.1",
