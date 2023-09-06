@@ -18,7 +18,6 @@ kaspacore.versionGuard = function(version) {
 		throw new Error(message);
 	}
 };
-kaspacore.versionGuard(global._kaspacoreLibVersion);
 global._kaspacoreLibVersion = kaspacore.version;
 
 
